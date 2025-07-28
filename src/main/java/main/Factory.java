@@ -18,6 +18,10 @@ public class Factory {
         return machines;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void printMachines() {
         System.out.println("Tehtaasta " + name + " löytyy seuraavat koneet:");
         for (Machine m : machines) {
@@ -25,5 +29,5 @@ public class Factory {
             System.out.println();
         }
     }
-    
+
 }
