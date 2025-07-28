@@ -9,9 +9,17 @@ public class Worker {
         this.role = role;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
     @Override
     public String toString() {
         return "Työntekijän tiedot: " + name + ", " + role;
     }
-
+    
 }

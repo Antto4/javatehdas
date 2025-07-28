@@ -11,6 +11,18 @@ public class Machine {
         this.worker = worker;
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public Worker getWorker() {
+        return worker;
+    }
+
     @Override
     public String toString() {
         return "Koneen tiedot: " + type + ", " + model + "\n" + worker;

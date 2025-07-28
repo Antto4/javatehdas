@@ -10,16 +10,20 @@ public class Factory {
         this.machines = new ArrayList<>();
     }
 
-    public void addMachine(Machine machine) {
-        machines.add(machine);
+    public void addMachine(Machine m) {
+        machines.add(m);
+    }
+
+    public ArrayList<Machine> getMachines() {
+        return machines;
     }
 
     public void printMachines() {
         System.out.println("Tehtaasta " + name + " löytyy seuraavat koneet:");
-        for (Machine machine : machines) {
-            System.out.println(machine);
+        for (Machine m : machines) {
+            System.out.println(m);
             System.out.println();
         }
     }
-
+    
 }
